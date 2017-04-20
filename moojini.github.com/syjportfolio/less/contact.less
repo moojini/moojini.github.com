@@ -1,0 +1,302 @@
+
+    .contact_list {
+        width: 100%;
+        
+        ul {
+            width: 80%;
+            margin: 40px auto;
+            
+            li {
+                width: 100%;
+                margin: 10px 0;
+                text-align: center;
+                font-family: @sub_font;
+                
+                a:before {
+                    display: block;
+                    content: "";
+                    clear: both;
+                    height: 2px;
+                    width: 20px;
+                    background-color: #933737;
+                    margin: 10px auto;
+                }
+                    
+                a {
+                    display: inline-block;
+                    
+                    div {
+                        width: 60px;
+                        margin: 0 auto;
+                        
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    
+                    span {
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                        color:#3F3F3F;
+                        
+                        &:hover {
+                            color:#301818;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        
+        p {
+            position: relative;
+            text-align: center;
+            font-family:@main_font;
+            font-size: 40px;
+            color:@main_font_color;
+            &:hover {
+                color:@sub_font_color;
+                font-weight: bold;
+            }
+            
+            span {
+                display: block;
+                width: 130px;
+                height: 120px;
+                position: absolute;
+                top:-65px;
+                right: 50%;
+                margin-right: -230px;
+                .background(url(../image/contact/heart_left_img.png),no-repeat,center);
+            }
+        }
+    }
+    
+    .contact_form {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        
+        .contact_form_inner {
+            // display: none;
+           .contact_Box ();
+            
+            h3 {
+                .contact_h3 ();
+            }
+            
+            .message {
+                height: 150px;
+                
+                label {
+                    display: inline-block;
+                    font-size: 25px;
+                    width: 100px;
+                    padding: 0 5px;
+                    color:#301818;
+                    font-weight: bold;
+                    vertical-align: top;
+                }
+                
+                textarea {
+                    width: 60%;
+                    height: 125px;
+                    border:1px #301818 solid;
+                    padding: 10px;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+            
+            li {
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                margin: 10px 0;
+                text-align: center;
+                
+                label {
+                    display: inline-block;
+                    font-size: 25px;
+                    width: 100px;
+                    padding: 0 5px;
+                    color:#301818;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+                
+                input {
+                    width: 60%;
+                    height: 35px;
+                    font-size: 20px;
+                    line-height: 25px;
+                    border:1px @main_font_color solid;
+                    padding: 0 10px;
+                    font-family: '맑은고딕', 'Malgn Gothic','Amatica SC';
+                }
+            }
+            
+            .send {
+                width: 80%;
+                text-align: right;
+                
+                button { 
+                    cursor: pointer;
+                    border:0;
+                    width: 30%;
+                    height: 50px;
+                    font-size: 25px;
+                    background-color: #fff;
+                    border:2px #933737 solid;
+                    color:@main_font_color;
+                    &:hover {
+                        background-color: #933737;
+                        border:2px #fff solid;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        
+        .contact_form_kakao {
+            display: none;
+            .contact_Box();
+            
+            h3 {
+                .contact_h3 ();
+            }
+        }
+        
+        .contact_form_insta {
+            display: none;
+            .contact_Box();
+            
+            h3 {
+                .contact_h3 ();
+            }
+            
+            ul {
+                width: 100%;
+                font-size: 0;
+                
+                li {
+                    width: 33.3%;
+                    display: inline-block;
+                    position: relative;
+                    overflow: hidden;
+                    
+                    a {
+                        display: block;
+                        width: 100%;
+                        background-color: #595959;
+                        height: 150px;
+                        overflow: hidden;
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0.5;
+                            transition: transform 0.5s;
+                            &:hover {
+                                -ms-transform:scale(1.2);
+                                -webkit-transform:scale(1.2);
+                                transform: scale(1.2);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    
+                    .overLay {
+                        display: none;
+                        width: 100%;
+                        height: 170px;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        background-color: #595959;
+                        opacity: 0.5;
+                        transition: 0.5s;
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .contact_form_tistory {
+            display: none;
+            .contact_Box();
+            
+            h3 {
+                .contact_h3 ();
+            }
+            
+            ul {
+                width: 100%;
+                font-size: 0;
+                
+                li {
+                    width: 33.3%;
+                    display: inline-block;
+                    position: relative;
+                    overflow: hidden;
+                    
+                    a {
+                        display: block;
+                        width: 100%;
+                        background-color:#595959;
+                        height: 150px;
+                        overflow: hidden;
+                        
+                        p {
+                            width: 100%;
+                            height: 25px;
+                            padding: 20px 0;
+                            font-size: 15px;
+                            color:#fff;
+                            background-color:#595959;
+                            font-family: '맑은고딕', 'Malgn Gothic';
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                        
+                        .quick_tistory {
+                            display: block;
+                            margin: 0 auto;
+                            width: 50px;
+                            height: 50px;
+                        }
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0.5;
+                            transition: transform 0.5s;
+                            &:hover {
+                                -ms-transform:scale(1.2);
+                                -webkit-transform:scale(1.2);
+                                transform: scale(1.2);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    
+                    .overLay {
+                        display: none;
+                        width: 100%;
+                        height: 170px;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        background-color: #595959;
+                        opacity: 0.5;
+                        transition: 0.5s;
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
