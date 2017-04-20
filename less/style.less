@@ -1,0 +1,596 @@
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+        font-family: '맑은고딕', 'Malgn Gothic','Pompiere', cursive, 'Amatica SC', cursive;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img {border:0;}
+    
+    ul {list-style: none;}
+    
+    a {text-decoration: none;}
+    
+    body {
+        height: 100%;
+    }
+    
+    #header {
+        
+    }
+    
+    @keyframes movemoveA{
+        from {transform: translateX(-300px)}
+        to {transform: translateX(560px)}
+    }
+    
+    @keyframes movemoveB{
+        from {transform: translateX(-300px)}
+        to {transform: translateX(500px)}
+    }
+    
+    @keyframes movemoveC{
+        from {transform: translateX(-300px)}
+        to {transform: translateX(500px)}
+    }
+    
+    @keyframes movemoveD{
+        from {transform: translateX(-300px)}
+        to {transform: translateX(560px)}
+    }
+    
+    @keyframes movemoveE{
+        from {transform: translateX(-300px)}
+        to {transform: translateX(500px)}
+    }
+    
+    @keyframes heartshke{
+          10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+          }
+          
+          20%, 80% {
+            transform: translate3d(2px, 0, 0);
+          }
+        
+          30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0);
+          }
+        
+          40%, 60% {
+            transform: translate3d(4px, 0, 0);
+        }
+    }
+    
+    
+
+        
+    #section {
+        width: 100%;
+        height: 100%;
+        
+        .section_inner {
+            width: 98%;
+            height: 96vh;
+            margin: 2vh auto;
+            // background-color: #F9DAD8;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section_inner:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        
+        .logo {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #fff;
+            
+            .logo_inner {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../image/logo.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: relative;
+                }
+            }
+        }
+        
+        .first_bg {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #EBA3AF;
+            position: relative;
+            overflow: hidden;
+            
+            .first_bg_inner {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                
+                .imgA {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0px;
+                    
+                    animation-name:movemoveA;
+                    animation-duration:7s;
+                    animation-iteration-count:infinite;
+                    animation-fill-mode:both;
+                }
+                
+                .imgB {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 100px;
+                    
+                    animation-name:movemoveB;
+                    animation-duration:7s;
+                    animation-iteration-count:infinite;
+                    animation-fill-mode:both;
+                }
+                
+                .imgC {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 200px;
+                    
+                    animation-name:movemoveC;
+                    animation-duration:7s;
+                    animation-iteration-count:infinite;
+                    animation-fill-mode:both;
+                }
+                
+                .imgD {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 300px;
+                    
+                    animation-name:movemoveD;
+                    animation-duration:7s;
+                    animation-iteration-count:infinite;
+                    animation-fill-mode:both;
+                }
+                
+                .imgE {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 400px;
+                    
+                    animation-name:movemoveE;
+                    animation-duration:7s;
+                    animation-iteration-count:infinite;
+                    animation-fill-mode:both;
+                }
+                
+                .move {
+                    width: 60px;
+                    height: 50px;
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+        .heart_A {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #F7DBDF;
+            
+            .heart_A_inner {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                
+                .heart_shake {
+                    animation: heartshke 0.82s cubic-bezier(.36,.07,.19,.97) both;
+                    animation-iteration-count:infinite;
+                    // -webkit-animation-delay: 3s; 3초후에 발생
+                    // animation-delay: 3s;
+                    transform: translate3d(0, 0, 0);
+                    // 이걸 왜쓰는거지?
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    //D transform(변형)과 연관되어 있으며, 입체적인 모습의 뒷면의 가시성을 결정하는 속성이다. 즉, 변형이 가해져 요소의 뒷면이 보여지게 될때, 이 속성으로 숨기거나 보여지게 할 수 있다. 
+                    //   perspective: 1000px;
+                }
+                
+                a {
+                    display: block;
+                    text-indent: -9999px;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../image/heart_a.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+        
+        .cloud_A {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #E58796;
+            
+            .cloud_A_inner {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                
+                a {
+                    display: block;
+                    text-indent: -9999px;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../image/cloud_a.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: 1s;
+                    &:hover {
+                        transform: scale(1.5);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        
+        .about {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #EBA3AF;
+            position: relative;
+            
+            .about_inner {
+                width: 100%;
+                height: 100%;
+                
+                a {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    height:100%;
+                    // position: absolute;
+                    // top:40px;
+                    // right: 10px;
+                    
+                    span {
+                        .indexTitle();
+                        position: absolute;
+                        top:40px;
+                        right: 0px;
+                        &:hover {
+                            color:#fff;
+                        }
+                    }
+                    
+                    span:after {
+                        display: block;
+                        content: "";
+                        clear: both;
+                        height: 2px;
+                        width: 0;
+                        background-color: #2D2C2C;
+                        transition: 1s;
+                        &:hover {
+                            width : ease;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .work {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #E58796;
+            position: relative;
+            
+            .work_inner {
+                width: 100%;
+                height: 100%;
+                
+                a {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    height:100%;
+                    // position: absolute;
+                    // top:40px;
+                    // right: 10px;
+                    
+                    span {
+                        .indexTitle();
+                        position: absolute;
+                        top:40px;
+                        left: 0;
+                        &:hover {
+                            color:#fff;
+                        }
+                    }
+                    
+                    span:after {
+                        // display: block;
+                        // content: "";
+                        // clear: both;
+                        // height: 2px;
+                        // width: 0;
+                        // background-color: #2D2C2C;
+                        content: ''; 
+                        height: 1px;
+                        display: block;
+                        border-bottom: 1px solid #e0d16c;
+                        width: 0;
+                        -webkit-transition: width 0.2s;
+                        transition: width 0.2s;
+                        &:hover{
+                            transform: translateX(100);
+                        }
+                    }
+                }
+            }
+        }
+        
+        .contact {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #EEB1BB;
+            position: relative;
+            
+            .contact_inner {
+                width: 100%;
+                height: 100%;
+                
+                a {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    height:100%;
+                    // position: absolute;
+                    // top:40px;
+                    // right: 10px;
+                    
+                    span {
+                        .indexTitle();
+                        position: absolute;
+                        top:40px;
+                        right: 0px;
+                        &:hover {
+                            color:#fff;
+                        }
+                    }
+                    
+                    span:after {
+                        display: block;
+                        content: "";
+                        clear: both;
+                        height: 2px;
+                        width: 0;
+                        background-color: #2D2C2C;
+                        transition: 1s;
+                        &:hover {
+                            width : ease;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .sns {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #EBA3AF;
+            position: relative;
+            
+            .sns_inner {
+                width: 100%;
+                height: 100%;
+                
+                span {
+                    .indexTitle();
+                    position: absolute;
+                    top:40px;
+                    left: 0;
+                    text-align: center;
+                }
+                
+                ul {
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    
+                    li {
+                        display: inline-block;
+                        margin:0 5px;
+                        .Main_sns();
+                        text-align: center;
+                        
+                        .sns_insta {
+                            display: block;
+                            width: 67px;
+                            height: 62px;
+                            margin: 0 auto;
+                            .background(url("../image/insta.png"),no-repeat,0 0);
+                            &:hover {
+                                .background(url("../image/insta_hover.png"),no-repeat,0 0);
+                            }
+                        }
+                        
+                        .sns_tistory {
+                            display: block;
+                            width: 67px;
+                            height: 62px;
+                            margin: 0 auto;
+                            .background(url("../image/tistory.png"),no-repeat,0 0);
+                            &:hover {
+                                .background(url("../image/tistory_hover.png"),no-repeat,0 0);
+                            }
+                        }
+                    }
+                }
+                    
+                span:after {
+                    display: block;
+                    content: "";
+                    clear: both;
+                    height: 2px;
+                    width: 0;
+                    background-color: #2D2C2C;
+                    transition: 1s;
+                    &:hover {
+                        width : ease;
+                    }
+                }
+            }
+        }
+        
+        .cloud_B {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #E58796;
+            
+            .cloud_B_inner {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                
+                a {
+                    display: block;
+                    text-indent: -9999px;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../image/cloud_a.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: 1s;
+                    &:hover {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+        
+        .bg {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #EBA3AF;
+        }
+        
+        .heart_B {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #DC5D72;
+            
+            
+            .heart_B_inner {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                
+                a {
+                    display: block;
+                    text-indent: -9999px;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../image/heart_b.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: 1s;
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+        
+        .car {
+            float: left;
+            width: 25%;
+            height: calc(100% / 3);
+            background-color: #F4CDD3;
+            position: relative;
+            overflow: hidden;
+            
+            .car_inner {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                
+                .imgA {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 10px;
+                }
+                
+                .imgB {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 110px;
+                }
+                
+                .imgC {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 210px;
+                }
+                
+                .imgD {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 310px;
+                }
+                
+                .imgE {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 410px;
+                }
+                
+                .imgF {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 510px;
+                }
+                
+                .imgG {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 610px;
+                }
+                
+                .move {
+                    width: 60px;
+                    height: 50px;
+                    
+                    img {
+                        width: 100%;
+                    }
+                    
+                }
+            }
+        }
+    }
